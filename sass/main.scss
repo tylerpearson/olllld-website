@@ -69,7 +69,6 @@ $breakpoint-tablet: 800px;
 
 
 
-
 html {
   box-sizing: border-box;
 }
@@ -132,9 +131,13 @@ p:last-child {
 }
 
     .intro-feature {
+        @extend .slide-left;
         top: 48%;
         left: 100%;
         position: absolute;
+        path {
+            fill: #fff;
+        }
     }
 
 .top-decoration {
@@ -200,6 +203,10 @@ p:last-child {
         li {
             display: inline-block;
             margin: 0 5px;
+            img {
+                -webkit-filter: drop-shadow(0 1px 1px darken($color-primary, 7.5%));
+                filter: drop-shadow(0 1px 1px darken($color-primary, 7.5%));
+            }
         }
     }
 
