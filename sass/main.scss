@@ -28,11 +28,13 @@ $breakpoint-tablet: 800px;
 @keyframes slideLeft {
     0% {
         left: 0;
-        top: 60%
+        top: 60%;
+        transform: scale(0.05);
     }
     45% {
         top: 60%;
         left: 50%;
+        transform: scale(1);
     }
     55% {
         top: 45%;
@@ -47,11 +49,13 @@ $breakpoint-tablet: 800px;
 @-webkit-keyframes slideLeft {
     0% {
         left: 0;
-        top: 60%
+        top: 60%;
+        transform: scale(0.05);
     }
     45% {
         top: 60%;
         left: 50%;
+        transform: scale(1);
     }
     55% {
         top: 45%;
@@ -124,7 +128,7 @@ p:last-child {
     bottom: 0;
     max-height: 100%;
     overflow: hidden;
-    background: linear-gradient(to right, darken($color-primary, 5%), lighten($color-primary, 5%));
+    background: linear-gradient(to right, darken($color-primary, 7.5%), lighten($color-primary, 7.5%));
 }
 
     .intro-feature {
