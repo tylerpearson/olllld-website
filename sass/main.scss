@@ -103,7 +103,6 @@ body {
 a {
     text-decoration: none;
     color: $color-secondary;
-    // transition: all 0.25s linear;
     outline: 0;
     &:active {
         position: relative;
@@ -204,9 +203,15 @@ p:last-child {
         li {
             display: inline-block;
             margin: 0 5px;
+            a:hover {
+                img {
+                    transform: scale(1.15) rotate(9deg);
+                }
+            }
             img {
                 -webkit-filter: drop-shadow(0 1px 1px darken($color-primary, 7.5%));
                 filter: drop-shadow(0 1px 1px darken($color-primary, 7.5%));
+                transition: all 0.1s ease-out;
             }
         }
     }
@@ -283,6 +288,17 @@ p:last-child {
         font-weight: 600;
         font-size: 20px;
         margin: 0;
+    }
+
+    .post-preview-more {
+        opacity: 0;
+        transition: opacity 0.2s linear, margin 0.2s linear;
+        margin-left: -10px;
+        .post-preview:hover & {
+            opacity: 1;
+            transform: translateX(0);
+            margin-left: 0;
+        }
     }
 
 
