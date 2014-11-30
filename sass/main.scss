@@ -46,6 +46,10 @@ body {
     line-height: 1.66;
     font-size: 14px;
     min-height: 100%;
+    &.loading {
+        height: 100%;
+        overflow: hidden;
+    }
 }
 
 a {

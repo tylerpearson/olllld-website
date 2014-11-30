@@ -26,6 +26,7 @@
         setTimeout(function() {
             fadeOut($cover, 1750, function() {
                 $loadingIcon.style.display = 'none';
+                document.getElementsByTagName('body')[0].className = document.getElementsByTagName('body')[0].className.replace(/(?:^|\s)loading(?!\S)/g , '');
             });
         }, 1500);
     }
