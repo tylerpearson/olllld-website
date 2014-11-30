@@ -11,62 +11,7 @@ $breakpoint-tablet: 800px;
 
 // animations
 
-.slide-left{
-    animation-name: slideLeft;
-    -webkit-animation-name: slideLeft;
-
-    animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
-
-    visibility: visible !important;
-    z-index: 1000;
-}
-
-@keyframes slideLeft {
-    0% {
-        left: 0;
-        top: 60%;
-        transform: scale(0.05);
-    }
-    45% {
-        top: 60%;
-        left: 50%;
-        transform: scale(1);
-    }
-    55% {
-        top: 45%;
-        left: 50%;
-    }
-    100% {
-        left: 100%;
-        top: 45%;
-    }
-}
-
-@-webkit-keyframes slideLeft {
-    0% {
-        left: 0;
-        top: 60%;
-        transform: scale(0.05);
-    }
-    45% {
-        top: 60%;
-        left: 50%;
-        transform: scale(1);
-    }
-    55% {
-        top: 45%;
-        left: 50%;
-    }
-    100% {
-        left: 100%;
-        top: 45%;
-    }
-}
-
+@import "animations";
 
 
 html {
@@ -243,13 +188,14 @@ p:last-child {
         }
 
     .box-gallery {
-
+        font-size: 0;
     }
 
         .box-gallery-item {
             text-align: center;
+            display: inline-block;
             width: 50%;
-            float: left;
+            vertical-align: top;
             padding: 10px 0;
             a {
                 color: #333;
@@ -263,6 +209,7 @@ p:last-child {
 
             .box-gallery-item-title {
                 margin: 0;
+                font-size: 16px;
             }
 
             .box-gallery-item-preview {
