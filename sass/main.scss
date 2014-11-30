@@ -100,7 +100,7 @@ p:last-child {
 }
 
 .container {
-    width: 1120px;
+    width: 1180px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -179,7 +179,7 @@ p:last-child {
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 2px;
-        margin: 0 0 10px 0;
+        margin: 0 0 15px 0;
     }
 
         .title-icon {
@@ -187,6 +187,13 @@ p:last-child {
             position: relative;
             top: 5px;
         }
+
+    .box-inner {
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 
     .box-gallery {
         font-size: 0;
@@ -219,6 +226,13 @@ p:last-child {
                 font-style: italic;
                 padding: 0 5px;
             }
+
+.work-logo {
+    float: left;
+    margin: 5px 15px 15px 5px;
+}
+
+
 
 .post-preview {
 
