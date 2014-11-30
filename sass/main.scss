@@ -1,5 +1,4 @@
 // variables
-
 $color-primary: #3392c4; // blue
 $color-secondary: #3ac2a0; // green
 $color-background: #f7f7f7;
@@ -10,10 +9,10 @@ $breakpoint-tablet: 800px;
 
 
 // animations
-
 @import "animations";
 
 
+// helpers
 html {
   box-sizing: border-box;
 }
@@ -36,6 +35,8 @@ html {
     *zoom: 1;
 }
 
+
+// content
 body {
     color: #333;
     background-color: $color-background;
