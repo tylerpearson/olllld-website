@@ -1,7 +1,7 @@
 (function() {
 
-    var $cover = document.getElementById('cover')
-        $intro = document.getElementsByClassName('intro');
+    var $cover = document.getElementById('cover'),
+        $loadingIcon = document.getElementById('loading-icon');
 
     function fadeOut(el, ms, callback) {
         var opacity = 1,
@@ -25,7 +25,7 @@
     function init() {
         setTimeout(function() {
             fadeOut($cover, 1750, function() {
-
+                $loadingIcon.style.display = 'none';
             });
         }, 1500);
     }
