@@ -271,3 +271,7 @@ p:last-child {
     box-shadow: inset 0 0 5px 5px darken($color-contrast, 5%);
     background: url('../img/bottom-lines.png') center center repeat-x $color-contrast;
 }
+
+    .footer-icon {
+        @extend .float;
+    }
